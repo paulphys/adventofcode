@@ -1,4 +1,4 @@
-def part1():
+def power_consumption():
     with open ('input.txt', 'r') as f:
         binary = list(zip(*f.read().splitlines()))
     output = []
@@ -8,5 +8,4 @@ def part1():
     gamma = int("".join(str(int(b)) for b in list(not r for r in output)), base=2)
     print(epsilon*gamma)
 
-
-part1()
+power_consumption()
