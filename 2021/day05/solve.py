@@ -7,7 +7,6 @@ def hydro(part):
         start, end = coordinates
         x1,y1 = start[0],start[1]
         x2,y2 = end[0],end[1]
-
         if x1 != x2 and y1 != y2:
             if part == 1: continue
         if x1 < x2:
@@ -20,7 +19,6 @@ def hydro(part):
         elif y1 > y2:
             ystep = -1
         else: ystep = 0
-
         start = (x1, y1)
         position[start] = position.get(start, 0) + 1
         while x1 != x2 or y1 != y2:
