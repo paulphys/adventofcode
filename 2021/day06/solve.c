@@ -23,7 +23,6 @@ int main(){
         c = fgetc(f);
     }
     fclose(f);
-
     printf("Part 1: %llu\n", population(80));
     printf("Part 2: %llu\n", population(256));
     return 0;
