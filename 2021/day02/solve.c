@@ -19,7 +19,7 @@ int main() {
             return 1;
         }
     }
-    printf("Sumbarine position X:%d Y:%d Mul: %d", x, y, x * y);
+    printf("Submarine position X:%d Y:%d Mul: %d", x, y, x * y);
     fclose(file);
     return 0;
 }
