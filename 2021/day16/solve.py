@@ -5,7 +5,6 @@ hex2bin = str.maketrans({
                "4":"0100","5":"0101","6":"0110","7":"0111",
                "8":"1000", "9":"1001","A":"1010","B":"1011",
                "C":"1100", "D":"1101", "E":"1110","F":"1111"})
-
 transmission = open("input.txt").read().translate(hex2bin)
 versions = 0
 
@@ -17,13 +16,14 @@ def decode_cmd(data, i, val):
     else:
         packets = int(data[i+1:i+12], 2)
         commands, i = decode_count(data, i + 12, packets)
-    if val == 0: return sum(commands), i
-    if val == 1: return prod(commands), i
-    if val == 2: return min(commands), i
-    if val == 3: return max(commands), i
-    if val == 5: return int(commands[0] > commands[1]), i
-    if val == 6: return int(commands[0] < commands[1]), i
-    if val == 7: return int(commands[0] == commands[1]), i
+    match val:
+        case 0: return sum(commands), i
+        case 1: return prod(commands), i
+        case 2: return min(commands), i
+        case 3: return max(commands), i
+        case 5: return int(commands[0] > commands[1]), i
+        case 6: return int(commands[0] < commands[1]), i
+        case 7: return int(commands[0] == commands[1]), i
 
 def decode(data,i=0):
     global versions
