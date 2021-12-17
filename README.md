@@ -19,4 +19,5 @@
 | 13 | [Transparent Origami](https://adventofcode.com/2021/day/13) | [Python](2021/day13/solve.py)
 | 14 | [Extended Polymerization](https://adventofcode.com/2021/day/14) | [Python](2021/day14/solve.py)
 | 15 | [Chiton](https://adventofcode.com/2021/day/15) | [Python](2021/day15/solve.py)
-| 15 | [Packet Decoder](https://adventofcode.com/2021/day/16) | [Python](2021/day16/solve.py)
+| 16 | [Packet Decoder](https://adventofcode.com/2021/day/16) | [Python](2021/day16/solve.py)
+| 17 | [Trick Shot](https://adventofcode.com/2021/day/17) | [Python](2021/day17/solve.py)
