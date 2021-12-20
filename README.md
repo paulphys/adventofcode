@@ -21,3 +21,6 @@
 | 15 | [Chiton](https://adventofcode.com/2021/day/15) | [Python](2021/day15/solve.py)
 | 16 | [Packet Decoder](https://adventofcode.com/2021/day/16) | [Python](2021/day16/solve.py)
 | 17 | [Trick Shot](https://adventofcode.com/2021/day/17) | [Python](2021/day17/solve.py)
+| 18 | [Snailfish](https://adventofcode.com/2021/day/18) | [Python](2021/day18/solve.py)
+| 19 | [Beacon Scanner](https://adventofcode.com/2021/day/19) | [Python](2021/day19/solve.py)
+| 20 | [Trench Map](https://adventofcode.com/2021/day/20) | [Python](2021/day20/solve.py)
