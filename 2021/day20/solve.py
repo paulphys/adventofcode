@@ -1,18 +1,15 @@
 sensor = open("input.txt").read().splitlines()
 diff = [-1,0,1]
-key = None
-trench = set()
-y = 0
+key, y = None, 0
+trench, neighbours = set(), set()
+
 for line in sensor:
-    if not key:
-        key = line
+    if not key: key = line
     elif len(line) > 0:
         for x in range(len(line)):
-            if line[x] == '#':
-                trench.add((x,y))
+            if line[x] == '#': trench.add((x,y))
         y += 1
 
-neighbours = set()
 for point in trench:
     x,y = point
     for dx in diff:
@@ -27,8 +24,7 @@ def step(trench, neighbours, itr=0):
             itrKey = {'#':'0', '.':'1'}
         else:
             pointToSave = '.'
-    newTrench = set()
-    newNeighbours = set()
+    newTrench, newNeighbours = set(), set()
     for point in neighbours:
         number = ''
         x,y = point
