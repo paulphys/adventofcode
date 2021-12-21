@@ -24,3 +24,4 @@
 | 18 | [Snailfish](https://adventofcode.com/2021/day/18) | [Python](2021/day18/solve.py)
 | 19 | [Beacon Scanner](https://adventofcode.com/2021/day/19) | [Python](2021/day19/solve.py)
 | 20 | [Trench Map](https://adventofcode.com/2021/day/20) | [Python](2021/day20/solve.py)
+| 21 | [Dirac Dice](https://adventofcode.com/2021/day/21) | [Python](2021/day21/solve.py)
