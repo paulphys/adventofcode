@@ -25,3 +25,7 @@
 | 19 | [Beacon Scanner](https://adventofcode.com/2021/day/19) | [Python](2021/day19/solve.py)
 | 20 | [Trench Map](https://adventofcode.com/2021/day/20) | [Python](2021/day20/solve.py)
 | 21 | [Dirac Dice](https://adventofcode.com/2021/day/21) | [Python](2021/day21/solve.py)
+| 22 | [Reactor Reboot](https://adventofcode.com/2021/day/22) | [Python](2021/day22/solve.py)
+| 23 | [Amphipod](https://adventofcode.com/2021/day/23) | [Python](2021/day23/solve.py)
+| 24 | [Arithmetic Logic Unit](https://adventofcode.com/2021/day/24) | [Python](2021/day24/solve.py)
+| 25 | [Sea Cucumber](https://adventofcode.com/2021/day/25) | [Python](2021/day25/solve.py)
