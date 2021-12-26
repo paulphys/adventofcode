@@ -45,7 +45,6 @@ def dijkstra(start, goal):
                         c if k == p else h
                             for k, h in enumerate(hallway)
                     )
-
                     hq.heappush(
                         q, (_cost, id(_rooms), (_rooms, _hallway))
                     )
@@ -54,14 +53,12 @@ def dijkstra(start, goal):
             c = hallway[p]
             if c is None:
                 continue
-
             path = hallway[rooms[c]:p] if p > rooms[c] else hallway[p + 1:rooms[c] + 1]
             if all(
                 z is None for z in path
             ):
                 i = ord(c) - ord('A')
                 room = rooms[i]
-
                 if all(
                     z in {None, c} for z in room
                 ):
@@ -69,10 +66,8 @@ def dijkstra(start, goal):
                     while j < len(room) and room[j] is None:
                         j = j + 1
                     j = j - 1
-
                     if room[j] is not None:
                         continue
-
                     _cost = cost + costs[c]*(j + abs(rooms[c] - p) + 1)
                     _rooms = tuple(
                         tuple(
@@ -85,7 +80,6 @@ def dijkstra(start, goal):
                         None if k == p else h
                             for k, h in enumerate(hallway)
                     )
-
                     hq.heappush(
                         q, (_cost, id(_rooms), (_rooms, _hallway))
                     )

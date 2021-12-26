@@ -1,20 +1,19 @@
 import numpy as np
-lines = open("input.txt").read().splitlines()
-grid = np.array([list(line) for line in lines])
+grid = np.array([list(line) for line in open("input.txt").read().splitlines()])
 
-def step(herd: str, grid: np.ndarray) -> int:
+def step(herd, grid):
 	move = grid == herd
-	gridShiftedBack = np.roll(grid, -1, 1 if herd == ">" else 0)
-	move[gridShiftedBack != '.'] = False
+	ShiftedBack = np.roll(grid, -1, 1 if herd == ">" else 0)
+	move[ShiftedBack != '.'] = False
 	grid[move] = '.'
-	toMoveShiftedForward = np.roll(move, 1, 1 if herd == ">" else 0)
-	grid[toMoveShiftedForward] = herd
+	toMove = np.roll(move, 1, 1 if herd == ">" else 0)
+	grid[toMove] = herd
 	return len(grid[move])
 
 def locator():
-	count = 1
-	while step('>', grid) + step('v', grid) > 0:
-		count += 1
-	print(count)
+    count = 1
+    while step('>', grid) + step('v', grid) > 0:
+        count += 1
+    return count
 
-locator()
+print(f"Part 1: {locator()}")
