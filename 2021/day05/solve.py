@@ -1,5 +1,4 @@
-with open('input.txt','r') as input:
-    data = [[[int(y) for y in x.split(',')] for x in line.strip('\n').split(' -> ')] for line in input]
+data = [[[int(y) for y in x.split(',')] for x in line.strip('\n').split(' -> ')] for line in open("input.txt")]
 
 def hydro(part):
     position = {}
@@ -29,5 +28,5 @@ def hydro(part):
     overlap = len(list(filter(lambda x: position[x] > 1, position)))
     return overlap
 
-print(f"Part 1: ", hydro(1))
-print(f"Part 2: ", hydro(2))
+print(f"Part 1:", hydro(1))
+print(f"Part 2:", hydro(2))
