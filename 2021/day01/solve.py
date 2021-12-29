@@ -1,5 +1,4 @@
-with open('input.txt', 'r') as f:
-    input = f.read()
+input = open("input.txt").read()
 
 def count(input):
     increments = 0
