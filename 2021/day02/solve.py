@@ -1,5 +1,4 @@
-with open('input.txt', 'r') as f:
-    commands = f.read().splitlines()
+commands = open("input.txt").read().splitlines()
 
 def part1():
     depth,horizontal = 0,0
