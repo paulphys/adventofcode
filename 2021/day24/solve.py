@@ -1,6 +1,6 @@
 from z3 import *
 
-input = open('input.txt', 'r').read().splitlines()
+input = open('input.txt).read().splitlines()
 lst = [[int(y.split()[-1]) for y in [input[x+4],input[x+5],input[x+15]]] for x in range(0,len(input),18)]
 
 def ALU(max):
