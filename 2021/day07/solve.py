@@ -1,6 +1,6 @@
 import numpy as np
 
-pos = np.loadtxt('input.txt',delimiter=',',dtype=int)
+pos = np.loadtxt("input.txt",delimiter=',',dtype=int)
 
 def part1():
     return np.abs(pos-int(np.median(pos))).sum()
