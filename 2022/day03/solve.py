@@ -1,5 +1,5 @@
 bags = [bag.strip() for bag in open("input.txt").readlines()]
-alphabet = list(map(chr,range(97,123))) + list(map(chr,range(65,91)))
+alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 priority = 0
 
 for bag in bags:
