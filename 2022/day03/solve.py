@@ -18,4 +18,3 @@ for group in groups:
     priority += alphabet.index(badge)+1
 
 print(f"p2: {priority}")
-    
