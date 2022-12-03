@@ -19,8 +19,3 @@ for group in groups:
 
 print(f"p2: {priority}")
     
-    
-
-
-
-
