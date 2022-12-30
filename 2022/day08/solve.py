@@ -19,5 +19,5 @@ for x in range(len(trees)):
                 visible.add((x,y))
         scenic = max(scenic, score)
     
-print(f"p1: {len(visible)}")
-print(f"p2: {scenic}")
+print("p1: ",len(visible))
+print("p2: ",{scenic})
